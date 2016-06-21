@@ -5,15 +5,15 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-public class MainActivity extends AppCompatActivity {
+public class ConectarBlue extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_conectar_blue);
     }
-    public void empezar (View view){
-        Intent intent = new Intent (this, login.class);
+    public void conectar (View view){
+        Intent intent = new Intent (this, devices.class);
         startActivity(intent);
     }
 }

@@ -20,16 +20,17 @@
         android:textSize="20dip"
         android:textColor="#0b84aa"/>
 
-    <EditText android:id="@+id/txtUserName" android:layout_height="wrap_content" android:layout_width="fill_parent"
-        android:hint="UserName" android:inputType="text"
-        android:text="Nombre" />
+    <EditText android:id="@+id/txtNombre" android:layout_height="wrap_content" android:layout_width="fill_parent"
+        android:hint="Nombre" android:inputType="text" />
 
     <EditText android:id="@+id/txtEmail" android:layout_marginTop="15dip" android:layout_height="wrap_content"
         android:layout_width="fill_parent" android:hint="Email" android:inputType="textEmailAddress" />
 
     <Button android:id="@+id/btnRegister" android:layout_height="wrap_content"
         android:layout_width="wrap_content" android:text="enviar"
-        android:paddingLeft="15dip" android:paddingRight="15dip" />
+        android:paddingLeft="15dip" android:paddingRight="15dip"
+        android:onClick="cambiar"
+        />
 
 
 </LinearLayout>

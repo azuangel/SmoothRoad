@@ -18,17 +18,17 @@ public class login extends AppCompatActivity {
     private Button btnLogin;
     private EditText inputEmail;
     private EditText inputNombre;
-    SharedPreferences sharedP = getSharedPreferences("registros", Context.MODE_PRIVATE);
+    SharedPreferences sharedP;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_activity_2);
+        setContentView(R.layout.activity_login);
 
         inputEmail = (EditText) findViewById(R.id.txtEmail);
-        inputNombre = (EditText) findViewById(R.id.txtUserName);
+        inputNombre = (EditText) findViewById(R.id.txtNombre);
         btnLogin = (Button) findViewById(R.id.btnRegister);
-
+        sharedP = getSharedPreferences("registros", Context.MODE_PRIVATE);
         btnLogin.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View view) {
@@ -38,6 +38,7 @@ public class login extends AppCompatActivity {
                 createSharedPreference(sharedP,nombre,"nombre" );
 
             }
+
         });
 
 
@@ -52,4 +53,10 @@ public class login extends AppCompatActivity {
         editor.putString(key, input);
         return editor.commit();
     }
+
+    public void cambiar (View view){
+        Intent intent = new Intent (this, baches.class);
+        startActivity(intent);
+    }
+
 }
