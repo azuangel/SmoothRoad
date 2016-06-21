@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Smooth</string>
+    <string name="none_paired">\"No hay dispositivos\"</string>
+</resources>
